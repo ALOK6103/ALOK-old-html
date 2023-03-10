@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+   
+
+    *{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .skills-card-img{
+     width:"110%"
+    }
+    
+    .skills-card-img:hover{
+     background-size: 100%;
+     background-color: #41eb95;
+    
+    
+    }
+
+    
+   
+    #bt {
+      font-size: 20px;
+      background-color: rgba(215, 10, 188, 0.363);
+      border: 0px;
+     
+    }
+
+    #broad {
+      background-color:rgba(8, 10, 22, 0.929);
+       width: 100%;
+       margin-top: -50px;
+    }
+
+    #home {
+      color: white;
+      font-size: 32px;
+      display: flex;
+      padding-top: 280px;
+      margin: 50px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      gap:150px;
+      justify-content: center;
+    }
+
+    .me1 {
+      font-size: 22px;
+      margin: auto;
+      text-align: center;
+    }
+
+    
+
+    #me3>img{
+      
+      width: 380px;
+      height: 300px;
+      /* border-radius: 50%; */
+    }
+
+    #me4 {
+      margin: auto;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .yl {
+      width: 110px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+      font-size: 17px;
+    }
+
+    .yl:hover{
+      background-color:rgba(165, 88, 243, 0) ;
+    }
+
+    #about{
+        border: 1px solid white;
+        margin: auto;
+        justify-content: center;
+        margin-top: 200px;
+        width:auto;
+       
+        text-align: center;
+        background-color: #41eb95;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+     .big{
+        font-size: 32px;
+        color:black;
+     }
+
+     .user-detail-intro{
+      font-size: 20px;
+      color: black;
+     }
+     #skills1{
+      display:grid;grid-template-columns: repeat(4,1fr);margin: auto;justify-content: space-around;gap: 120px;row-gap: 50px;margin-top: 100px;
+     }
+     #skills{
+      width: 60%;margin: auto;justify-content: center;gap: 120px;margin-top: 200px;
+     }
+
+     #skill3{
+      color: white;margin-left: 42%;font-size: 32px;
+     }
+
+     #pr1{
+      color: black;margin-left: 46%;font-size: 32px;
+     }
+
+     #st1{
+      color: white;margin-left: 42%;font-size: 32px;
+     }
+
+     .pr3{
+       width: 450px;;
+       height: 250px;
+     }
+
+     #projects{
+      margin-top: 200px;
+      background-color: #41eb95;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-bottom: 150px;
+      
+     }
+
+     .project-card{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      
+     }
+
+
+
+.pr3:hover {
+  
+
+  
+  
+}
+
+.project-deployed-link:hover{
+  background-color: #ec460518;
+}
+
+
+
+.project-github-link:hover{
+  background-color: #ec460518;
+}
+     
+     .project-title{
+      display: flex;
+     justify-content: center;
+      gap: 20px;
+      
+     }
+
+     .project-title{
+      font-size: 30px;
+     }
+     .pr4{
+      width: 550px;
+     gap:20px;
+      text-align: center;
+      margin-top: -20px;
+     }
+
+     #stats{
+      background-color: rgba(8, 10, 22, 0.929);
+      align-items: center;
+      padding-top: 50px;
+      margin: auto;
+      align-items: center;
+      padding-bottom: 100px;
+      
+       
+     }
+
+     #stats1{
+      margin:"auto";
+      
+      
+      
+     }
+
+     
+     #me3{
+      margin-top: -3%;
+     }
+
+     
+     .footer{
+      display: flex;justify-content: space-around;
+      margin-bottom: -50px
+     }
+     
+
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+
+.nav{
+  background-color: #41eb95;
+  margin-top: -60px;
+  position:fixed;
+      z-index: 1;
+      width: 96.3%;
+      padding-bottom: 5px;
+}
+
+
+@media all and (min-width: 481px) and (max-width: 1280px) {
+      #nav-menu {
+       width:auto;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        font-size: 16px;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: #41eb95;
+        top: 0px;
+        position: sticky;
+        z-index: 1;
+      }
+      
+      #me65{
+        display: flex;
+        justify-content: center;
+      }
+    
+      #broad {
+      background-color:rgba(8, 10, 22, 0.929);
+       width: 100%;
+       margin-top: -50px;
+      }
+      
+      #bt {
+        font-size: 17px;
+        background-color: rgba(21, 2, 41, 0.363);
+        border: 0px;
+      }
+
+      #skills1{
+      display:grid;grid-template-columns: repeat(3,1fr);margin: auto;justify-content: space-around;gap: 120px;row-gap: 50px;margin-top: 100px;gap:20px
+     }
+
+     #skill3{
+      color: white;margin-left: 35%;font-size: 32px;
+     }
+
+     .project-card{
+      margin-left: 2%;
+      margin-top: 50px;
+      margin-right: 2%;
+     }
+     #me3{
+      margin-left: 50px;
+     }
+
+     .skills-card-img{
+     width:"110%"
+    }
+    
+    .skills-card-img:hover{
+     background-size: 100%;
+     background-color: #ec4605;
+    
+    }
+    #me2{
+      width:100%
+    }
+
+    
+    }
+
+    
+   
+ @media all and  (min-width: 270px) and (max-width: 480px) {
+     
+      #broad{
+       
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        
+      }
+
+      #nav-menu  {
+       
+        width: auto;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 18px;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: #41eb95;
+        top: 0px;
+        position: sticky;
+        z-index: 1;
+        
+      }
+
+      #navbar{
+        width: 98%;
+      }
+     /* .project-description{
+         width: 360px;
+     } */
+
+
+      #bt {
+        font-size: 16px;
+        background-color: rgba(21, 2, 41, 0.363);
+        border: 0px;
+      }
+      .project-card{
+      
+      margin-left: 0px;
+      gap: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+     }
+     #st1{
+     margin-left: 36%;
+     }
+
+     .pr3{
+      width: 295px;
+     }
+     .pr3:hover{
+      width: 295px;
+     }
+
+     #home{
+      width: 100%;
+      padding-top: 100px;
+      display: block;
+       
+     }
+
+     
+     
+      #me4{
+       
+        margin-bottom: 30px;
+      }
+      #me7{
+        margin: auto;
+        justify-content: center;
+        font-size: 16px;
+        margin-left: 30px;
+      }
+      #me65{
+        font-size: 20px;
+        margin-left: 105px;
+      }
+      #me1{
+        font-size: 20px;
+      }
+      .text{
+        font-size: 20px;
+      }
+
+     
+      #projects{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #stats1{
+        margin: auto;
+       
+      }
+      #me3{
+        width:50%;
+      margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #about{
+        margin-top: 20px;
+      }
+      #skills1{
+      display:grid;grid-template-columns: repeat(2,1fr);margin: auto;justify-content: space-around;gap: 120px;row-gap: 50px;margin-top: 100px;
+     }
+     #skill3{
+      color: white;margin-left: 30%;font-size: 32px;
+     }
+
+     .skills-card-img{
+     width:"100%"
+    }
+    
+    .skills-card-img:hover{
+     background-size: 100%;
+     background-color: #ec4605;
+    
+    }
+
+    #me65{
+      font-size: 30px;
+      margin-left: 10%;
+    }
+    .footer{
+     display: inline;
+    text-align: center;
+    margin-bottom: -70px;
+    }
+    .project-title{
+     margin: auto;
+    }
+    .pr4{
+      margin-top: 0px;
+    }
+    }
+  </style>
+  <body>
+    <div id="broad">
+     <div id="navbar" style="margin-top: 110px;" >
+      <!-- <div id="nav-menu">
+        <div style="width: 30%;">Alok..</div>
+        <div style="display: flex;width: auto;justify-content: space-between;gap:15px">
+        <div class="nav-link home"><a style="text-decoration: none; color: black;" href="#me">Home</a></div>
+        <div class="nav-link about"><a style="text-decoration: none; color: black;" href="#about">About Me</a></div>
+        <div class="nav-link skills"><a style="text-decoration: none; color: black;" href="#skills">Skills</a></div>
+        <div class="nav-link projects"><a  style="text-decoration: none; color: black;" href="#projects">Projects</a></div>
+        <div  class="nav-link contact" ><a  style="text-decoration: none; color: black;" href="#contact">Contact</a></div>
+        <div class="nav-link resume">
+          <a  id="resume-link-1" target="_blank" style="text-decoration: none; color:rgb(11, 11, 11);border: 1px solid black;background-color: rgba(165, 88, 243, 0.363);"  href="https://drive.google.com/file/d/1DXJhMJx0LyoGf0g8Jp-9x1oJO1aBXgNv/view?usp=sharing" download> Resume </a>
+        </div>
+      </div>
+      </div> -->
+
+      <ul class="nav">
+        
+        <li style="display: flex;width: auto;justify-content: space-between;gap:15px">
+        <li class="nav-link home"><a style="text-decoration: none; color: black;" href="#me">Home</a></li>
+        <li class="nav-link about"><a style="text-decoration: none; color: black;" href="#about">About Me</a></li>
+        <li class="nav-link skills"><a style="text-decoration: none; color: black;" href="#skills">Skills</a></li>
+        <li class="nav-link projects"><a  style="text-decoration: none; color: black;" href="#projects">Projects</a></li>
+        <li  class="nav-link contact" ><a  style="text-decoration: none; color: black;" href="#contact">Contact</a></li>
+        <li class="nav-link resume">
+          <a  id="resume-link-1" target="_blank" style="text-decoration: none; color:rgb(11, 11, 11);border: 1px solid black;background-color: rgba(165, 88, 243, 0.363);"  href="https://drive.google.com/file/d/1DXJhMJx0LyoGf0g8Jp-9x1oJO1aBXgNv/view?usp=sharing" download> Resume </a>
+        </li>
+      </li>
+    </ul>
+    </div>
+
+    <!-- <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Work</a></li>
+    </ul> -->
+
+    
+
+      <div id="home" >
+        <div id="me2">
+           <div id="me7">
+          <div id="me65">
+            <p  id="user-detail-name">Hi.. i am Alok Kumar Verma</p>
+          </div>
+          <div class="me1">
+            <p >Full Stack Web Developer ...</p>
+          </div>
+        </div>
+          <div id="me4">
+            <div>
+              <button class="yl" ><a id="resume-link-2" target="_blank" style="text-decoration: none; ;" href="https://drive.google.com/file/d/1DXJhMJx0LyoGf0g8Jp-9x1oJO1aBXgNv/view?usp=sharing">Resume</a></button>
+            </div>
+            <div>
+              <button class="yl"><a target="_blank" style="text-decoration: none; " href="https://github.com/ALOK6103">Follow</a></button>
+            </div>
+          </div>
+        </div>
+        <div id="me3">
+          <img class="home-img" style="border-radius: 30%;" src="https://avatars.githubusercontent.com/u/107899486?v=4" />
+      </div>
+      </div>
+
+      <div id="about" class="about section">
+        <p class="big">About Me</p>
+
+        <div  id="user-detail-intro">Aspiring MERN stack developer , enthusiastic about learning and exploring new technologies. Interested in creating impactful products.
+        </div>
+        <div>
+         
+        </div>
+        <p></p>
+      </div>
+   
+      <div id="skills">
+        <p id="skill3">My Skills</p>
+      <div id="skills1" >
+
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><img   src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" />
+        <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">HTML</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://cdn-icons-png.flaticon.com/128/732/732190.png"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">CSS</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Java Script</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://cdn-icons-png.flaticon.com/128/875/875209.png"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">React</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Type Script</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://cdn-icons-png.flaticon.com/128/460/460989.png"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Json</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://tse1.mm.bing.net/th?id=OIP.lwFdj37jv9YxLthOt6syAQHaHa&pid=Api&P=0" style="width: 130px;"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Node JS</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://tse1.mm.bing.net/th?id=OIP.qJLL9KebrDW_MGmnycRxJQHaHa&pid=Api&P=0" style="width: 130px;"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Next JS</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://tse4.mm.bing.net/th?id=OIP.7K_j3KOjm-bDuIGxZb5T_QHaE5&pid=Api&P=0" style="width: 130px;height: 130px;"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Chakra UI</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://tse4.explicit.bing.net/th?id=OIP.dhb_pkVTrntpxGsAZmx9ZgHaHX&pid=Api&P=0" style="width: 130px;height: 130px;"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">Redux</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;"><img  src="https://tse3.mm.bing.net/th?id=OIP.cZq4SKe-l3mG0cZ1DA-zjwHaHa&pid=Api&P=0" style="width: 130px;height: 130px;"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">VS Code</p>
+        </div>
+        <div class="skills-card-img" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><img  src="https://tse2.mm.bing.net/th?id=OIP.JhdchOb0n1bwrlfhGqycbgHaFG&pid=Api&P=0" style="width: 130px;height: 130px;"/>
+          <p  class="skills-card-name" style="margin: auto; text-align: center; color: white; margin-top: 5px; margin-bottom: 5px;">MongoDB</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="projects">
+       <p id="pr1">Projects</p>
+
+
+
+       <div class="project-card" >
+        <div style="margin-right: 5%;" class="hov"><img class="pr3" src="https://user-images.githubusercontent.com/112845916/221496830-378aef53-138f-41ae-bf32-152d0ab1badf.png" /></div>
+        <div class="pr4">
+          <p class="project-title">Snapdeal.Com Clone</p>
+          <div class="project-tech-stack">
+            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" width="30px"/>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" width="30px" />
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" width="30px"/>
+            
+          </div>
+         <div class="project-description">CrackDeal (E-commerce platform) is an React.js application,  Designed to provide customers with a personalized easy-to-utilize user experience for purchasing products online.</div>
+          <div>
+            <button class="project-deployed-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://subsequent-parcel-2806-mehulktik-gmailcom.vercel.app/" style="text-decoration: none;">Check it out!</a></button>
+            <button class="project-github-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://github.com/Mehul-Kanjariya/subsequent-parcel-2806" style="text-decoration: none;">Github Link!</a></button>
+          </div>
+        </div>
+       </div> 
+
+
+       <div class="project-card">
+        <div style="margin-right: 5%;"><img class="pr3" src="new/Screenshot 2023-01-17 153000.png" /></div>
+        <div class="pr4">
+          <p class="project-title">Bewakoof.Com Clone</p>
+          <div class="project-tech-stack" >
+            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" width="30px"/>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" width="30px" />
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" width="30px"/>
+            <img  src="https://cdn-icons-png.flaticon.com/128/760/760357.png" width="30px" /> 
+          </div>
+          <p  class="project-description" >It is e-commerce website , popularly known for clothing items. Designed to provide customers with a personalized easy-to-utilize user experience for purchasing products online.</p>
+          <div>
+            <button class="project-deployed-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://new-bewakoof-site.netlify.app/" style="text-decoration: none;">Check it out!</a></button>
+            <button  class="project-github-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://github.com/ALOK6103/wakeful-rabbits-8403/tree/main/my-app" style="text-decoration: none;">Github Link!</a></button>
+          </div>
+        </div>
+       </div>
+ 
+    
+
+
+       <div class="project-card">
+        <div style="margin-right: 5%;"><img class="pr3" src="new\Screenshot 2023-01-20 093723.png" /></div>
+        <div class="pr4">
+          <p class="project-title">SparkAmerica.Com Clone</p>
+          <div class="project-tech-stack" >
+            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" width="30px"/>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" width="30px" />
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" width="30px"/>
+            
+          </div>
+          <p class="project-description" > SparkAmerica, a new platform which spread the spark to even more people!  SparkAmerica is <br/> a national movement and fitness challenge.</p>
+          <div>
+            <button class="project-deployed-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://thunderous-moonbeam-cb253d.netlify.app/" style="text-decoration: none;">Check it out!</a></button>
+            <button class="project-github-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://github.com/ALOK6103/roasted-geese-6392" style="text-decoration: none;">Github Link!</a></button>
+          </div>
+        </div>
+       </div> 
+
+       <div class="project-card">
+        <div style="margin-right: 5%;"><img class="pr3" src="new\Screenshot 2023-01-20 093723.png" /></div>
+        <div class="pr4">
+          <p class="project-title">SparkAmerica.Com Clone</p>
+          <div class="project-tech-stack" >
+            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" width="30px"/>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" width="30px" />
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" width="30px"/>
+            
+          </div>
+          <p class="project-description" > SparkAmerica, a new platform which spread the spark to even more people!  SparkAmerica is  a national movement and fitness challenge.</p>
+          <div>
+            <button class="project-deployed-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://thunderous-moonbeam-cb253d.netlify.app/" style="text-decoration: none;">Check it out!</a></button>
+            <button class="project-github-link" style="width:100px;height:40px;border-radius: 10px"><a target="_blank" href="https://github.com/ALOK6103/roasted-geese-6392" style="text-decoration: none;">Github Link!</a></button>
+          </div>
+        </div>
+       </div> 
+    </div>
+
+    <div id="stats">
+      <p id="st1">My Statistics</p>
+      <div id="stats1" class="react-activity-calendar">
+        <div >
+        <div style="display: flex;justify-content: center;align-items: center;" >
+      <p><img  id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs?username=alok6103&show_icons=true&locale=en&layout=compact" alt="alok6103" /></p>
+    </div>
+    <div style="display: flex;justify-content: center;align-items: center;" >
+<p>&nbsp;<img id="github-stats-card"  src="https://github-readme-stats.vercel.app/api?username=alok6103&show_icons=true&locale=en" alt="alok6103" /></p>
+</div>
+</div>
+<div>
+<div style="display: flex;justify-content: center;align-items: center;" >
+  <p><img id="github-streak-stats"  src="https://github-readme-streak-stats.herokuapp.com/?user=alok6103&" alt="alok6103" /></p>
+</div>
+</div>
+</div>
+    </div>
+
+
+
+
+    <div id="contact" style="background-color: #41eb95;margin-top: -15px;" >
+      <div style="display: flex;align-items: center;justify-content: center;" >
+        <p style="font-size: 28px;" >Contact Me</p>
+      </div>
+      <div>
+        
+        <div class="footer">
+          <div style="margin-top: 10px; font-size: 20px;"><img src="https://cdn-icons-png.flaticon.com/128/3082/3082383.png" width="20px" /><p>Faizabad, U.P</p></div>
+           <div id="contact-email" style="font-size: 20px"><img src="https://cdn-icons-png.flaticon.com/128/542/542689.png" width="20px" /><p>alok.mcaet@gmail.com</p></div>
+           <div  id="contact-phone" style="font-size: 20px;"><img src="https://cdn-icons-png.flaticon.com/128/6614/6614366.png" width="20px" /><p>+91 7275965874</p></div>
+          
+           <div id="contact-github"><img src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png" width="20px" /> 
+           </br></br>
+            <a style="text-decoration: none;color: black;" href="https://github.com/ALOK6103">GitHub</a></div><div id="contact-linkedin"><img src="https://cdn-icons-png.flaticon.com/128/61/61109.png" width="20px"/>
+            </br></br>
+              <a style="text-decoration: none; color: black;" href="https://www.linkedin.com/in/alok-kumar-verma-2b4b43158/">LinkedIn</a></div>
+         </div>
+    
+      </div>
+    
+    </div>
+
+    
+    
+    </div> 
+    
+    
+  </body>
+</html>
